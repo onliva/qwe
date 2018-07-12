@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 module.exports = {
     // mode: 'development',
     mode: 'production',
@@ -22,6 +23,11 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx']
     },
+    plugins: [
+        new webpack.ProvidePlugin({
+            React: 'react'
+        })
+    ],
     // devServer: {
     //     contentBase: path.join(__dirname, 'dist'),
     //     compress: true,

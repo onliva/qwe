@@ -1,12 +1,10 @@
-import React,{ Component } from "react";
-class NoteForm extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return ( <div>NoteForm</div> );
-    }
-}
- 
+const NoteForm = props => {
+    return (
+        <div>
+            <input type="text" />
+            <button>add</button>
+        </div>
+    );
+};
+
 export default NoteForm;

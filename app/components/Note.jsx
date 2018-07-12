@@ -1,12 +1,11 @@
-import React,{ Component } from "react";
-class Note extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return ( <div>Note</div> );
-    }
-}
- 
+const Note = props => {
+    return (
+        <div>
+            <p>{props.children}</p>
+            <button onClick={props.remove}>del</button>
+        </div>
+    );
+};
+
+
 export default Note;
