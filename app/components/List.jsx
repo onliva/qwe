@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { render } from "react-dom";
-import List from "./components/List";
+import NoteForm from "./NoteForm";
+import Note from "./Note";
 
-class App extends Component {
+class List extends Component {
     constructor(props) {
         super(props);
         this.state = {};
@@ -10,11 +10,11 @@ class App extends Component {
     render() {
         return (
             <div>
-                <List />
+                <NoteForm />
+                <Note />
             </div>
         );
     }
 }
 
-export default App;
-render(<App />, document.getElementById("root"));
+export default List;
